@@ -7,6 +7,7 @@
 
 body {
     background-color: #F0F0F0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -138,10 +139,8 @@ header .top-header .box-one .select {
 .postavka .postavka-input {
     width: 783px;
     height: 48px;
-    background: url(/images/icons/location.png) no-repeat;
     background: #FFFFFF;
     border: 1px solid #F0F0F0;
-    box-sizing: border-box;
     border-radius: 6px;
 }
 
@@ -153,8 +152,43 @@ header .top-header .box-one .select {
     color: #fff;
 }
 
-.pizza-content {
-    max-width: 100%;
+.pizza-block-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 7%;
+}
+
+.pizza-block-header .heading {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #191919;
+}
+
+.pizza-block-header .pizza-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 16px;
+    width: 126px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pizza-block-header .pizza-filter p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #191919;
+    padding-left: 8px;
 }
 
 .pizza-content .box-container {
@@ -170,10 +204,6 @@ header .top-header .box-one .select {
     width: 300px;
     height: 480px;
     background-color: #fff;
-}
-
-.pizza-filter {
-    cursor: pointer;
 }
 
 .back-filter {
