@@ -2,6 +2,8 @@ let pizzaContainer = document.querySelector('.box-container');
 let pizzaFilter = document.querySelector('.pizza-filter');
 let backFilter = document.querySelector('.back-filter');
 let modalClose = document.querySelector('.modal-close');
+let modalContent = document.querySelector('.modal-content');
+let spanModalContent = modalContent.querySelector('span');
 let pizza = [{
         pizzaName: 'Чикен Сладкий Чили',
         pizzaPrice: 122,
@@ -70,4 +72,8 @@ pizzaFilter.addEventListener('click', () => {
 });
 modalClose.addEventListener('click', () => {
     backFilter.classList.remove('active');
+});
+modalContent.addEventListener('click', (e) => {
+    e.target.classList.add('active');
+
 });
