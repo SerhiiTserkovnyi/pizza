@@ -3,28 +3,28 @@ let pizzaFilter = document.querySelector('.pizza-filter');
 let backFilter = document.querySelector('.back-filter');
 let modalClose = document.querySelector('.modal-close');
 let pizza = [{
-        pizzaName: 'Пепперони по-деревенски',
+        pizzaName: 'Чикен Сладкий Чили',
         pizzaPrice: 122,
         imagePizza: "images/pizza/1.png",
-        descriptionPizza: 'Огурцы маринованные, Пепперони, Сыр Моцарелла...'
+        descriptionPizza: 'Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...'
     },
     {
-        pizzaName: 'Пепп',
+        pizzaName: 'EASY PEASY огуречный расколбас',
         pizzaPrice: 122,
         imagePizza: "images/pizza/2.png",
-        descriptionPizza: 'Огурцы маринованные, Пепперони, Сыр Моцарелла...'
+        descriptionPizza: 'Курица, Лук, Перец Халапеньо...'
     },
     {
-        pizzaName: 'Пепп',
+        pizzaName: 'EASY PEASY чикен а-ля <br>хрен',
         pizzaPrice: 122,
         imagePizza: "images/pizza/3.png",
-        descriptionPizza: 'Огурцы маринованные, Пепперони, Сыр Моцарелла...'
+        descriptionPizza: 'Курица, Лук, Соус Карбонара,...'
     },
     {
-        pizzaName: 'Пепп',
+        pizzaName: '4 сезона',
         pizzaPrice: 122,
         imagePizza: "images/pizza/4.png",
-        descriptionPizza: 'Огурцы маринованные, Пепперони, Сыр Моцарелла...'
+        descriptionPizza: 'Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари...'
     },
     {
         pizzaName: 'Пепп',
@@ -59,7 +59,7 @@ pizza.forEach(({ pizzaName, pizzaPrice, imagePizza, descriptionPizza }) => {
     <div class="name-pizza">${pizzaName}</div>
     <div class="description-pizza">${descriptionPizza}</div>
     <div class="footer-pizza">
-        <button class="btn">выбрать</button>
+        <div class="btn">Выбрать</div>
         <div class="price">от ${pizzaPrice} грн</div>
     </div>
 </div>

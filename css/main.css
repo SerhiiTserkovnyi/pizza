@@ -204,6 +204,47 @@ header .top-header .box-one .select {
     width: 300px;
     height: 480px;
     background-color: #fff;
+    border: 1px solid #F0F0F0;
+    border-radius: 12px;
+}
+
+.pizza-content .box-container .box .name-pizza {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+.pizza-content .box-container .box .description-pizza {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    padding: 12px 20px;
+}
+
+.pizza-content .box-container .box .footer-pizza {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.pizza-content .box-container .box .footer-pizza .btn {
+    background: #FF7010;
+    border-radius: 6px;
+    padding: 13px 32px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.pizza-content .box-container .box .footer-pizza .price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF7010;
 }
 
 .back-filter {
