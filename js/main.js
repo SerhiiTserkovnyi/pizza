@@ -4,7 +4,7 @@ let backFilter = document.querySelector('.back-filter');
 let modalClose = document.querySelector('.modal-close');
 let modalContent = document.querySelectorAll('.modal-content');
 let modalSpan = document.querySelectorAll('.modal-content span');
-console.log(modalSpan);
+let btnNo = document.querySelector('.btn-no');
 let pizza = [{
         pizzaName: 'Чикен Сладкий Чили',
         pizzaPrice: 122,
@@ -76,13 +76,17 @@ modalClose.addEventListener('click', () => {
 });
 modalContent.forEach((item) => {
     item.addEventListener('click', (e) => {
-        e.target.classList.add('active');
+        e.target.classList.toggle('active');
 
     });
 
 });
 
+
 function removeAction() {
+    for (let i = 0; i < modalSpan.length; i++) {
+        modalSpan[i].classList.remove('active');
+    }
     console.log(modalSpan);
 
 }
